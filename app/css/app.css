@@ -1,5 +1,407 @@
-
-body {
-	background: #ccc;
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans Narrow"), local("PTSans-Narrow"), url(fonts/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format("woff");
 }
 
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Narrow Bold"), local("PTSans-NarrowBold"), url(fonts/Q_pTky3Sc3ubRibGToTAYiylde52zikAzebNtJS89aM.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(fonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lobster Two Bold"), local("LobsterTwo-Bold"), url(fonts/bmdxOflBqMqjEC0-kGsIiDqR_3kx9_hJXbbyU8S6IN0.woff) format("woff");
+}
+
+/* line 4, ../../theme/sass/_theme.scss */
+body {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 960px;
+        /*
+	top:0;
+	left:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin:0;
+	background-size:cover;
+        */
+}
+
+/* line 18, ../../theme/sass/_theme.scss */
+.ie body {
+  filter: dropshadow(color=black, offx=0, offy=1);
+}
+
+/* line 21, ../../theme/sass/_theme.scss */
+h1 {
+  font-size: 68px;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 700;
+  font-family: 'Lobster Two', cursive;
+  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
+}
+
+/* line 30, ../../theme/sass/_theme.scss */
+.ie h1 {
+  filter: dropshadow(color=black, offx=0, offy=3);
+  padding-bottom: 12px;
+}
+
+/* line 35, ../../theme/sass/_theme.scss */
+.ie h2 {
+  filter: dropshadow(color=black, offx=0, offy=3);
+}
+
+/* line 38, ../../theme/sass/_theme.scss */
+h3 {
+  font-size: 25px;
+  margin: 0.2em 0;
+}
+
+/* line 42, ../../theme/sass/_theme.scss */
+.ie h3 {
+  filter: dropshadow(color=black, offx=0, offy=3);
+}
+
+/* line 45, ../../theme/sass/_theme.scss */
+h4 {
+  margin-bottom: 5px;
+}
+
+/* line 48, ../../theme/sass/_theme.scss */
+p, pre {
+  margin: 0 0 10px 0;
+}
+
+/* line 51, ../../theme/sass/_theme.scss */
+code {
+  text-transform: uppercase !important;
+  color: #EEE;
+  border-bottom: 1px dotted #666;
+}
+
+/* line 56, ../../theme/sass/_theme.scss */
+small {
+  background: url(../img/alpha.png);
+  background: rgba(0, 0, 0, 0.8) url();
+  border: 1px solid #111;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+/* line 63, ../../theme/sass/_theme.scss */
+a {
+  color: rgba(255, 255, 255, 0.57);
+  text-decoration: none;
+}
+
+/* line 67, ../../theme/sass/_theme.scss */
+a:hover {
+  color: #BBB;
+}
+
+/* line 70, ../../theme/sass/_theme.scss */
+#Header {
+  margin-bottom: 62px;
+  position: relative;
+  width: 100%;
+  height: 110px;
+  line-height: 110px;
+  z-index: 1;
+}
+
+/* line 78, ../../theme/sass/_theme.scss */
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 920px;
+  z-index: 1;
+}
+
+/* line 85, ../../theme/sass/_theme.scss */
+#Content h2 {
+  display: inline-block;
+  margin: 25px 0 45px;
+  padding: 0px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 36px;
+}
+
+/* line 95, ../../theme/sass/_theme.scss */
+#WindowSlide {
+  margin: 0 auto;
+  position: relative;
+  width: 634px;
+  height: 170px;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 103, ../../theme/sass/_theme.scss */
+#Mail {
+  position: absolute;
+  width: 634px;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 109, ../../theme/sass/_theme.scss */
+#Content h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  display: block;
+  clear: both;
+}
+
+/* line 117, ../../theme/sass/_theme.scss */
+#form-weather-input p {
+  text-align: center;
+}
+
+/* line 120, ../../theme/sass/_theme.scss */
+#form-weather-input input {
+  background: rgba(255, 255, 255, 0.52);
+  color: #000;
+  vertical-align: middle;
+  width: 293px;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  padding: 0 10px;
+  height: 40px;
+}
+
+/* line 129, ../../theme/sass/_theme.scss */
+#form-weather-input input[type="button"] {
+  background: white;
+  width: auto;
+  padding: 0px 25px;
+  cursor: pointer;
+  margin-left: -5px;
+  font-weight: bold;
+  height: 42px;
+  display: inline-block;
+}
+
+/* line 142, ../../theme/sass/_theme.scss */
+.callback,
+.simple {
+  font-size: 20px;
+  background: #27ae60;
+  padding: 0.5em 0.7em;
+  color: #ecf0f1;
+  margin-bottom: 50px;
+  -webkit-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+
+/* line 151, ../../theme/sass/_theme.scss */
+.callback {
+  cursor: pointer;
+}
+
+/* line 154, ../../theme/sass/_theme.scss */
+.ended {
+  background: #c0392b;
+}
+
+/* line 157, ../../theme/sass/_theme.scss */
+.countdown {
+  text-align: center;
+}
+
+/* line 160, ../../theme/sass/_theme.scss */
+.intro {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* line 165, ../../theme/sass/_theme.scss */
+.styled {
+  margin-bottom: 30px;
+}
+
+/* line 168, ../../theme/sass/_theme.scss */
+.styled div {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 1px;
+  width: 136px;
+  padding: 10px 30px 53px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0);
+  text-shadow: none;
+  vertical-align: middle;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
+}
+
+/* line 183, ../../theme/sass/_theme.scss */
+.styled div:last-child {
+  border: none;
+}
+
+/* line 186, ../../theme/sass/_theme.scss */
+#overlay {
+  background: rgba(0, 0, 0, 0.04) url(../img/overlays/06.png) top left repeat;
+  background: rgba(0, 0, 0, 0.14);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+/* IE7 inline-block hack */
+/* line 196, ../../theme/sass/_theme.scss */
+* + html .styled div {
+  display: inline;
+  zoom: 1;
+}
+
+/* line 200, ../../theme/sass/_theme.scss */
+.styled div:first-child {
+  margin-left: 0;
+}
+
+/* line 203, ../../theme/sass/_theme.scss */
+.styled div span {
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.36);
+  padding-top: 3px;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 211, ../../theme/sass/_theme.scss */
+footer {
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.64);
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 218, ../../theme/sass/_theme.scss */
+footer span {
+  float: right;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 223, ../../theme/sass/_theme.scss */
+  body {
+    min-width: initial !important;
+  }
+
+  /* line 226, ../../theme/sass/_theme.scss */
+  .wrapper {
+    width: 100%;
+  }
+
+  /* line 227, ../../theme/sass/_theme.scss */
+  .styled div {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 232, ../../theme/sass/_theme.scss */
+  h1 {
+    float: initial;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* line 238, ../../theme/sass/_theme.scss */
+  .styled div {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    width: 80px;
+    border-radius: 80px;
+    height: 80px;
+  }
+
+  /* line 247, ../../theme/sass/_theme.scss */
+  #Content h2 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 300;
+  }
+
+  /* line 254, ../../theme/sass/_theme.scss */
+  .styled {
+    margin-bottom: 30px;
+  }
+
+  /* line 257, ../../theme/sass/_theme.scss */
+  #form-weather-input input[type="button"] {
+    margin-top: 10px;
+  }
+
+  /* line 260, ../../theme/sass/_theme.scss */
+  #form-weather-input input {
+    width: 80%;
+  }
+
+  /* line 263, ../../theme/sass/_theme.scss */
+  footer {
+    position: relative !important;
+  }
+}
+/* line 11, ../../theme/sass/app.scss */
+body {
+  background-color: #1a82f7;
+  background-repeat: repeat-x;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2727), to(#1a82f7));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #2f2727, #1a82f7);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #2f2727, #1a82f7);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #2f2727, #1a82f7);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #2f2727, #1a82f7);
+}

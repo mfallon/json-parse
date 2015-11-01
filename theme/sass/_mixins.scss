@@ -1,0 +1,16 @@
+@mixin v-gradient($color1:#2F2727, $color2:#1a82f7)
+{
+ background-color: $color2;
+ background-repeat: repeat-x;
+ 
+ /* Safari 4-5, Chrome 1-9 */
+ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+ /* Safari 5.1, Chrome 10+ */
+ background: -webkit-linear-gradient(top, $color1, $color2);
+ /* Firefox 3.6+ */
+ background: -moz-linear-gradient(top, $color1, $color2);
+ /* IE 10 */
+ background: -ms-linear-gradient(top, $color1, $color2);
+ /* Opera 11.10+ */
+ background: -o-linear-gradient(top, $color1, $color2);
+}
