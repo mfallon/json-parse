@@ -268,7 +268,7 @@ a:hover {
 
 /* line 141, ../../theme/sass/_theme.scss */
 #form-weather-input {
-  width: 330px;
+  width: 340px;
   margin: 0 auto;
 }
 /* line 144, ../../theme/sass/_theme.scss */
@@ -291,20 +291,19 @@ a:hover {
   width: auto;
   padding: 0px 25px;
   cursor: pointer;
-  margin-left: -5px;
   font-weight: bold;
   height: 42px;
   display: inline-block;
   color: #1a82f7;
 }
-/* line 169, ../../theme/sass/_theme.scss */
+/* line 168, ../../theme/sass/_theme.scss */
 #form-weather-input .row span:first-child {
   font-size: smaller;
   padding: 5px;
   display: block;
 }
 
-/* line 179, ../../theme/sass/_theme.scss */
+/* line 178, ../../theme/sass/_theme.scss */
 .callback,
 .simple {
   font-size: 20px;
@@ -316,17 +315,17 @@ a:hover {
   transition: background 0.5s ease-out;
 }
 
-/* line 188, ../../theme/sass/_theme.scss */
+/* line 187, ../../theme/sass/_theme.scss */
 .callback {
   cursor: pointer;
 }
 
-/* line 191, ../../theme/sass/_theme.scss */
+/* line 190, ../../theme/sass/_theme.scss */
 .ended {
   background: #c0392b;
 }
 
-/* line 195, ../../theme/sass/_theme.scss */
+/* line 194, ../../theme/sass/_theme.scss */
 .intro {
   font-size: 22px;
   font-weight: normal;
@@ -334,24 +333,24 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 202, ../../theme/sass/_theme.scss */
+  /* line 201, ../../theme/sass/_theme.scss */
   body {
     min-width: initial !important;
   }
 
-  /* line 205, ../../theme/sass/_theme.scss */
+  /* line 204, ../../theme/sass/_theme.scss */
   .styled div {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 420px) {
-  /* line 210, ../../theme/sass/_theme.scss */
+  /* line 209, ../../theme/sass/_theme.scss */
   h1 {
     float: initial;
     text-align: center;
   }
 
-  /* line 214, ../../theme/sass/_theme.scss */
+  /* line 213, ../../theme/sass/_theme.scss */
   .styled div {
     margin-bottom: 10px;
     font-size: 40px;
@@ -362,7 +361,7 @@ a:hover {
     height: 80px;
   }
 
-  /* line 223, ../../theme/sass/_theme.scss */
+  /* line 222, ../../theme/sass/_theme.scss */
   #weatherResults h2 {
     margin: 0px 0px 0px 0px;
     padding: 0px;
@@ -371,22 +370,22 @@ a:hover {
     font-weight: 300;
   }
 
-  /* line 230, ../../theme/sass/_theme.scss */
+  /* line 229, ../../theme/sass/_theme.scss */
   .styled {
     margin-bottom: 30px;
   }
 
-  /* line 233, ../../theme/sass/_theme.scss */
+  /* line 232, ../../theme/sass/_theme.scss */
   #form-weather-input input[type="button"] {
     margin-top: 10px;
   }
 
-  /* line 236, ../../theme/sass/_theme.scss */
+  /* line 235, ../../theme/sass/_theme.scss */
   #form-weather-input input {
     width: 80%;
   }
 
-  /* line 239, ../../theme/sass/_theme.scss */
+  /* line 238, ../../theme/sass/_theme.scss */
   footer {
     position: relative !important;
   }
