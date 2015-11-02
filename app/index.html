@@ -19,41 +19,29 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body id="home">
-    <div id="Header">
-        <div class="wrapper">
-                <h1>5 Day Forcast</h1>
-
-        </div>
-    </div>
-    <div class="search">
+    <div id="header">
+        <h1>5 Day Forcast</h1>
         <div id="form-weather-input"> 
             <form action="" method="post" onsubmit="">
-                <input class="city_names" id="city_names" name="city_names" placeholder="Enter city name here"/>
-                <input type = "button" name="submit" value="Search" id="submit" class="submit"/>
+                <div class="row">
+                    <input type="text" class="city_names" id="city_names" name="city_names" placeholder="Enter city name here"/>
+                    <input type="button" name="submit" value="Search" id="submit" class="submit"/>
+                </div>
             </form>
+            <div id="autocomplete-feedback"></div>
         </div>
     </div>
-    <!-- data bound elements -->
-    <div class="main">
-        <span class="city"></span>
-        <span class="country"></span>
-        <div class="temp"></div>
-        <div class="message"></div>
+    <!-- results will be DOM inserted here -->
+    <div id="weatherResults" class="wrapper">
+        <div class="styled"></div>
     </div>
-    
-    <div id="Content" class="wrapper"> 
-    <div class="countdown styled"></div> 
-
-    </div>
-
-    <div id="overlay"></div>
 
     <!-- libraries -->
     <script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/lib/Backstretch.js"></script>
     <script type="text/javascript" src="js/lib/jquery.countdown.js"></script>
-    <script type="text/javascript" src="js/lib/global.js"></script>
+    
     <!-- business logic -->
     <script type="text/javascript" src="js/app.js"></script>
 </body>

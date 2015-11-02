@@ -1,13 +1,15 @@
 // Cross-browser mixins for CSS3 features
 @import "compass/css3/";
 
-// colours etc
+// variables - colors etc
+@import "variables";
+
+// mixins
 @import "mixins";
 
-// Responsive front-end framework
+// autocomplete styles
+@import "autocomplete";
+
+// responsive template
 @import "theme";
 
-// custom
-body {
-    @include v-gradient();
-}

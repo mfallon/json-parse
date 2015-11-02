@@ -1,3 +1,55 @@
+/* theme colors */
+/* line 1, ../../theme/sass/_autocomplete.scss */
+.ui-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  _width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+/* line 30, ../../theme/sass/_autocomplete.scss */
+.ui-autocomplete .ui-menu-item > a.ui-corner-all {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #555555;
+  white-space: nowrap;
+}
+/* line 39, ../../theme/sass/_autocomplete.scss */
+.ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-hover, .ui-autocomplete .ui-menu-item > a.ui-corner-all.ui-state-active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0088cc;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background-image: none;
+}
+
 @font-face {
   font-family: 'PT Sans Narrow';
   font-style: normal;
@@ -132,25 +184,19 @@ a:hover {
 }
 
 /* line 70, ../../theme/sass/_theme.scss */
-#Header {
-  margin-bottom: 62px;
+#header {
+  margin-bottom: 32px;
   position: relative;
   width: 100%;
-  height: 110px;
-  line-height: 110px;
-  z-index: 1;
 }
 
-/* line 78, ../../theme/sass/_theme.scss */
-.wrapper {
+/* line 76, ../../theme/sass/_theme.scss */
+#weatherResults {
+  max-width: 938px;
   margin: 0 auto;
-  position: relative;
-  width: 920px;
-  z-index: 1;
 }
-
-/* line 85, ../../theme/sass/_theme.scss */
-#Content h2 {
+/* line 79, ../../theme/sass/_theme.scss */
+#weatherResults h2 {
   display: inline-block;
   margin: 25px 0 45px;
   padding: 0px;
@@ -160,51 +206,86 @@ a:hover {
   color: #fff;
   line-height: 36px;
 }
-
-/* line 95, ../../theme/sass/_theme.scss */
-#WindowSlide {
-  margin: 0 auto;
-  position: relative;
-  width: 634px;
-  height: 170px;
-  display: block;
-  overflow: hidden;
-}
-
-/* line 103, ../../theme/sass/_theme.scss */
-#Mail {
-  position: absolute;
-  width: 634px;
-  top: 0px;
-  left: 0px;
-}
-
-/* line 109, ../../theme/sass/_theme.scss */
-#Content h3 {
+/* line 89, ../../theme/sass/_theme.scss */
+#weatherResults h3 {
   text-align: center;
   font-size: 20px;
   font-weight: normal;
   display: block;
   clear: both;
 }
+/* line 96, ../../theme/sass/_theme.scss */
+#weatherResults div div:first-child {
+  text-align: center;
+}
+/* line 99, ../../theme/sass/_theme.scss */
+#weatherResults .styled {
+  margin-bottom: 30px;
+}
+/* line 101, ../../theme/sass/_theme.scss */
+#weatherResults .styled div {
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 3px;
+  width: 120px;
+  padding: 10px 30px 25px;
+  background: rgba(0, 0, 30, 0.2);
+  text-shadow: none;
+  vertical-align: middle;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
+}
+/* line 116, ../../theme/sass/_theme.scss */
+#weatherResults .styled div:first-child {
+  margin-left: 0;
+}
+/* line 119, ../../theme/sass/_theme.scss */
+#weatherResults .styled div span {
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.36);
+  padding-top: 3px;
+  font-size: 40%;
+  font-weight: normal;
+  text-align: center;
+}
+/* line 126, ../../theme/sass/_theme.scss */
+#weatherResults .styled div span sup {
+  font-size: x-small;
+}
+/* line 129, ../../theme/sass/_theme.scss */
+#weatherResults .styled div span span {
+  font-size: 120%;
+}
 
-/* line 117, ../../theme/sass/_theme.scss */
+/* line 136, ../../theme/sass/_theme.scss */
+* + html .styled div {
+  display: inline;
+  zoom: 1;
+}
+
+/* line 141, ../../theme/sass/_theme.scss */
+#form-weather-input {
+  width: 320px;
+  margin: 0 auto;
+}
+/* line 144, ../../theme/sass/_theme.scss */
 #form-weather-input p {
   text-align: center;
 }
-
-/* line 120, ../../theme/sass/_theme.scss */
-#form-weather-input input {
-  background: rgba(255, 255, 255, 0.52);
-  color: #000;
+/* line 147, ../../theme/sass/_theme.scss */
+#form-weather-input input#city_names {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
   vertical-align: middle;
-  width: 293px;
+  width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.76);
   padding: 0 10px;
   height: 40px;
 }
-
-/* line 129, ../../theme/sass/_theme.scss */
+/* line 157, ../../theme/sass/_theme.scss */
 #form-weather-input input[type="button"] {
   background: white;
   width: auto;
@@ -214,9 +295,16 @@ a:hover {
   font-weight: bold;
   height: 42px;
   display: inline-block;
+  color: #1a82f7;
+}
+/* line 169, ../../theme/sass/_theme.scss */
+#form-weather-input .row span:first-child {
+  font-size: smaller;
+  padding: 5px;
+  display: block;
 }
 
-/* line 142, ../../theme/sass/_theme.scss */
+/* line 179, ../../theme/sass/_theme.scss */
 .callback,
 .simple {
   font-size: 20px;
@@ -228,129 +316,42 @@ a:hover {
   transition: background 0.5s ease-out;
 }
 
-/* line 151, ../../theme/sass/_theme.scss */
+/* line 188, ../../theme/sass/_theme.scss */
 .callback {
   cursor: pointer;
 }
 
-/* line 154, ../../theme/sass/_theme.scss */
+/* line 191, ../../theme/sass/_theme.scss */
 .ended {
   background: #c0392b;
 }
 
-/* line 157, ../../theme/sass/_theme.scss */
-.countdown {
-  text-align: center;
-}
-
-/* line 160, ../../theme/sass/_theme.scss */
+/* line 195, ../../theme/sass/_theme.scss */
 .intro {
   font-size: 22px;
   font-weight: normal;
   margin-bottom: 30px;
 }
 
-/* line 165, ../../theme/sass/_theme.scss */
-.styled {
-  margin-bottom: 30px;
-}
-
-/* line 168, ../../theme/sass/_theme.scss */
-.styled div {
-  display: inline-block;
-  font-size: 80px;
-  font-weight: 900;
-  text-align: center;
-  margin: 0 1px;
-  width: 136px;
-  padding: 10px 30px 53px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0);
-  text-shadow: none;
-  vertical-align: middle;
-  border-right: 1px solid rgba(255, 255, 255, 0.36);
-  text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
-}
-
-/* line 183, ../../theme/sass/_theme.scss */
-.styled div:last-child {
-  border: none;
-}
-
-/* line 186, ../../theme/sass/_theme.scss */
-#overlay {
-  background: rgba(0, 0, 0, 0.04) url(../img/overlays/06.png) top left repeat;
-  background: rgba(0, 0, 0, 0.14);
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  bottom: 0px;
-  opacity: 0.8;
-}
-
-/* IE7 inline-block hack */
-/* line 196, ../../theme/sass/_theme.scss */
-* + html .styled div {
-  display: inline;
-  zoom: 1;
-}
-
-/* line 200, ../../theme/sass/_theme.scss */
-.styled div:first-child {
-  margin-left: 0;
-}
-
-/* line 203, ../../theme/sass/_theme.scss */
-.styled div span {
-  display: block;
-  border-top: 1px solid rgba(255, 255, 255, 0.36);
-  padding-top: 3px;
-  font-size: 21px;
-  font-weight: 400;
-  text-align: center;
-}
-
-/* line 211, ../../theme/sass/_theme.scss */
-footer {
-  width: 100%;
-  height: 30px;
-  background: rgba(0, 0, 0, 0.64);
-  position: absolute;
-  bottom: 0px;
-}
-
-/* line 218, ../../theme/sass/_theme.scss */
-footer span {
-  float: right;
-  margin: 10px;
-}
-
 @media (max-width: 768px) {
-  /* line 223, ../../theme/sass/_theme.scss */
+  /* line 202, ../../theme/sass/_theme.scss */
   body {
     min-width: initial !important;
   }
 
-  /* line 226, ../../theme/sass/_theme.scss */
-  .wrapper {
-    width: 100%;
-  }
-
-  /* line 227, ../../theme/sass/_theme.scss */
+  /* line 205, ../../theme/sass/_theme.scss */
   .styled div {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 420px) {
-  /* line 232, ../../theme/sass/_theme.scss */
+  /* line 210, ../../theme/sass/_theme.scss */
   h1 {
     float: initial;
     text-align: center;
-    margin-left: 0px;
-    margin-bottom: 0px;
   }
 
-  /* line 238, ../../theme/sass/_theme.scss */
+  /* line 214, ../../theme/sass/_theme.scss */
   .styled div {
     margin-bottom: 10px;
     font-size: 40px;
@@ -361,8 +362,8 @@ footer span {
     height: 80px;
   }
 
-  /* line 247, ../../theme/sass/_theme.scss */
-  #Content h2 {
+  /* line 223, ../../theme/sass/_theme.scss */
+  #weatherResults h2 {
     margin: 0px 0px 0px 0px;
     padding: 0px;
     text-align: center;
@@ -370,38 +371,23 @@ footer span {
     font-weight: 300;
   }
 
-  /* line 254, ../../theme/sass/_theme.scss */
+  /* line 230, ../../theme/sass/_theme.scss */
   .styled {
     margin-bottom: 30px;
   }
 
-  /* line 257, ../../theme/sass/_theme.scss */
+  /* line 233, ../../theme/sass/_theme.scss */
   #form-weather-input input[type="button"] {
     margin-top: 10px;
   }
 
-  /* line 260, ../../theme/sass/_theme.scss */
+  /* line 236, ../../theme/sass/_theme.scss */
   #form-weather-input input {
     width: 80%;
   }
 
-  /* line 263, ../../theme/sass/_theme.scss */
+  /* line 239, ../../theme/sass/_theme.scss */
   footer {
     position: relative !important;
   }
-}
-/* line 11, ../../theme/sass/app.scss */
-body {
-  background-color: #1a82f7;
-  background-repeat: repeat-x;
-  /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2727), to(#1a82f7));
-  /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #2f2727, #1a82f7);
-  /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #2f2727, #1a82f7);
-  /* IE 10 */
-  background: -ms-linear-gradient(top, #2f2727, #1a82f7);
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #2f2727, #1a82f7);
 }
