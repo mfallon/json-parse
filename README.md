@@ -6,3 +6,9 @@ Enter a city name into the search field and a JSON request is sent to retrieve c
 Hitting search will request the 5 day forcast for the provided city.
 
 Live Demo available at: <pending>
+
+To Do's:
+
+    1 - Effecient way to do city lookups that don't result in network overhead
+    2 - Detail view on each day to get more in depth stats that are available in response anyway
+    3 - Theme/Style: Add icons for weather types and change background depending on weather

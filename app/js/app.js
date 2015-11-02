@@ -100,8 +100,8 @@ $('.submit').click(function(){
         success: function( response ) {
             if(response.hasOwnProperty('list') && response.list.length > 0) {
                 response.list.forEach(function(element,index,array){
-                    console.log(element);
                     var convertedTimeStamp = new Date(element.dt);
+                    // Generate weather blocks
                     $("#weatherResults > .styled").append(
                             "<div class='block'>" +
                                 convertDecimal(element.temp.day) +
